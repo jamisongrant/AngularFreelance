@@ -7,26 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var DocumentsComponent = (function () {
-    function DocumentsComponent() {
-        this.documents = [
-            {
-                title: "My First Doc",
-                description: "asdfasdf",
-                file_url: "http://google.com",
-                updated_at: "str",
-                image_url: "http://google.com"
-            },
-        ];
+var ProposalListComponent = (function () {
+    function ProposalListComponent() {
     }
-    return DocumentsComponent;
+    return ProposalListComponent;
 }());
-DocumentsComponent = __decorate([
+ProposalListComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'documents',
-        templateUrl: 'documents.component.html'
+        selector: 'proposal-list',
+        templateUrl: 'proposal-list.component.html'
     })
-], DocumentsComponent);
-exports.DocumentsComponent = DocumentsComponent;
-//# sourceMappingURL=documents.component.js.map
+], ProposalListComponent);
+exports.ProposalListComponent = ProposalListComponent;
+//# sourceMappingURL=proposal-list.component.js.map
