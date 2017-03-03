@@ -18,7 +18,7 @@ var ProposalShowComponent = (function () {
     ProposalShowComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.routeId = this.route.params.subscribe(function (params) {
-            _this.id = params['id'];
+            _this.id = +params['id'];
         });
     };
     return ProposalShowComponent;
