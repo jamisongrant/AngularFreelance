@@ -6,6 +6,7 @@ import { Document } from './document';
 
 @Injectable()
 export class DocumentService {
+  // api connector
   private documentsUrl = 'http://localhost:3001/freelance_documents.json';
 
   constructor(
@@ -14,10 +15,12 @@ export class DocumentService {
 
   getDocuments(): Observable<Document[]> {
     return this.http.get(this.documentsUrl)
+                    // converts data into data that we can use
                     .map((response: Response) => <Document[]>response.json())
                     .catch(this.handleError);
   }
 
+  // pulled from angular2 documentation
   private handleError (error: Response | any) {
     // In a real world app, we might use a remote logging infrastructure
     let errMsg: string;
